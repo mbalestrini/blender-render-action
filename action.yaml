@@ -1,0 +1,17 @@
+# action.yml
+name: 'Blender ready environment'
+description: ''
+inputs:
+  file-to-render:
+    description: 'Filename to render'
+    required: false
+    default: ''
+
+#outputs:
+ # time: # id of output
+  #  description: 'The time we greeted you'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ file-to-render }}
