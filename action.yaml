@@ -1,5 +1,5 @@
 # action.yml
-name: 'Blender ready environment'
+name: 'blender execution'
 description: ''
 inputs:
   file-to-render:
@@ -8,7 +8,7 @@ inputs:
     default: ''
   
   blender-extra-args:
-    description: 'Extra command line arguments after filename'
+    description: 'Extra command line arguments for blender execution'
     required: false
     default: ''
   
