@@ -1,8 +1,8 @@
 # action.yml
-name: 'blender execution'
+name: 'run blender'
 description: ''
 inputs:
-  file-to-render:
+  file-to-load:
     description: 'Filename to render'
     required: false
     default: ''
@@ -20,4 +20,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.file-to-render }} ${{ inputs.blender-extra-args }}
+    - ${{ inputs.file-to-load }} ${{ inputs.blender-extra-args }}

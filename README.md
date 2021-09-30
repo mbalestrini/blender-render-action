@@ -1,4 +1,4 @@
-# blender execution
+# run blender
 
 This actions runs a docker environment with blender installed and executes it
 
@@ -6,7 +6,7 @@ Current docker used: https://github.com/nytimes/rd-blender-docker
 
 ## Inputs
 
-### `file-to-render`
+### `file-to-load`
 
 **Optional** filename to open with blender
 
