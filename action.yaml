@@ -20,4 +20,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.file-to-render inputs.blender-extra-args }}
+    - ${{ inputs.file-to-render }} ${{ inputs.blender-extra-args }}
