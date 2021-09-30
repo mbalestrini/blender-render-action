@@ -6,6 +6,12 @@ inputs:
     description: 'Filename to render'
     required: false
     default: ''
+  
+  blender-extra-args:
+    description: 'Extra command line arguments after filename'
+    required: false
+    default: ''
+  
 
 #outputs:
  # time: # id of output
@@ -14,4 +20,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.file-to-render }}
+    - ${{ inputs.file-to-render inputs.blender-extra-args }}
