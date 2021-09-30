@@ -1,4 +1,4 @@
-# run blender
+# run blender action
 
 This actions runs a docker environment with blender installed and executes it
 
