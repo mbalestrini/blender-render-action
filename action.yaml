@@ -14,4 +14,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ input.file-to-render }}
+    - ${{ inputs.file-to-render }}
